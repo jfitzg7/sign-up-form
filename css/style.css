@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "simplecatregular";
+  src: url("../fonts/simplecat-d9xpv-webfont.woff2") format("woff2"),
+    url("../fonts/simplecat-d9xpv-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+div.hero {
+  flex: 3;
+  background-image: url("../manja-vitolic-gKXKBY-C-Dk-unsplash.jpg");
+  background-position: center;
+  background-size: 2234px 1537px;
+  background-repeat: no-repeat;
+}
+
+div.banner {
+  font: 1.5em "simplecatregular", sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20vh;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.4);
+  flex: 1;
+}
+
+div.banner h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+}
+
+div.banner img {
+  color: white;
+}
+
+div.attributions {
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.attributions p {
+  flex: 1;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+main div {
+  flex: 1;
+}
