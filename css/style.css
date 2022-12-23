@@ -30,7 +30,7 @@ div.banner {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 20vh;
+  top: 23vh;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -51,16 +51,90 @@ div.hero p {
   bottom: 0px;
   font-size: 0.9rem;
   margin: 25px 0px;
+  padding: 0px 10px;
   width: 100%;
   text-align: center;
+}
+
+div.hero a:visited {
+  color: white;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  flex: 5;
+  flex: 6;
 }
 
 main div {
   flex: 1;
+}
+
+div.intro p {
+  padding-right: 15%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+div.intro,
+div.submit {
+  background-color: whitesmoke;
+}
+
+div.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.sign-up {
+  background-color: white;
+  box-shadow: 5px 50px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+div.sign-up p {
+  padding-left: 5%;
+  flex: 0 1 auto;
+}
+
+div.sign-up form {
+  padding-left: 5%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  flex: 1 1 auto;
+  max-width: 755px;
+  gap: 5px;
+  padding-bottom: 2%;
+}
+
+div.sign-up p {
+  font: 1.5em "simplecatregular", sans-serif;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font: 0.85em "simplecatregular", sans-serif;
+}
+
+input {
+  display: block;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+div.intro p {
+  font: 1.5em "simplecatregular", sans-serif;
 }
