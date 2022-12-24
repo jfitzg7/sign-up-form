@@ -129,7 +129,7 @@ form > div {
 }
 
 label {
-  font-size: 0.85em;
+  font-size: 1em;
   display: block;
   text-align: left;
 }
@@ -138,24 +138,33 @@ input {
   font: 1em sans-serif;
   width: 250px;
   height: 30px;
-  border: 1px solid #999;
+  border: 1px solid #e5e7eb;
   border-radius: 5px;
   display: block;
-  background-color: whitesmoke;
+  background-color: white;
   appearance: none;
 }
 
 input:focus {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
   outline: none;
+  border-color: blue;
 }
 
-input:focus:valid {
-  border: 1px solid blue;
+input:not(:focus):not(:placeholder-shown):valid {
+  border-color: green;
 }
 
-input:focus:invalid {
-  border: 1px solid red;
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.help {
+  display: inline-block;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0.2em 0 1em 0;
+  color: #c00;
 }
 
 div.submit {
@@ -164,6 +173,7 @@ div.submit {
 
 button {
   display: inline-block;
+  font-size: 0.9em;
   margin: 20px 0;
   padding: 5px;
   width: min(200px, 90%);

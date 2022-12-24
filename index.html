@@ -35,44 +35,88 @@
       </div>
       <div class="sign-up">
         <h2>Let's do this!</h2>
-        <form>
+        <form id="sign-up-form">
+          <!-- Hack: Set a placeholder with a value of " " so that we can hook our CSS onto it using :placeholder-shown -->
           <div>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name" />
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder=" "
+              required
+            />
+            <p class="help">* First name is required</p>
           </div>
 
           <div>
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="last-name" />
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder=" "
+              required
+            />
+            <p class="help">* Last name is required</p>
           </div>
 
           <div>
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="kitty@cat.com"
+              required
+            />
+            <p class="help">* An email is required</p>
           </div>
 
           <div>
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="number" name="phone-number" id="phone-number" />
+            <label for="phone-number">Phone Number <em>(optional)</em></label>
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              placeholder="123-456-7890"
+            />
           </div>
 
           <div>
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder=" "
+              required
+            />
+            <p class="help">* A password is required</p>
           </div>
 
           <div>
-            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <label for="confirm-password">Confirm Password</label>
             <input
               type="password"
               name="confirm-password"
               id="confirm-password"
+              placeholder=" "
+              required
             />
           </div>
         </form>
       </div>
       <div class="submit">
-        <button>Create account</button>
+        <button
+          type="submit"
+          form="sign-up-form"
+          name="sign-up-button"
+          value="submit"
+        >
+          Create Account
+        </button>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </main>
